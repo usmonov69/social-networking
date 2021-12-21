@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 def home(request):
 	user = request.user
-	hello = "Hello World"
+	hello = "Welcome"
 
 	context  = {
 	'user': user,

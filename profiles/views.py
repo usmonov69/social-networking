@@ -142,9 +142,9 @@ class ProfileListView(LoginRequiredMixin,ListView):
 			rel_sender.append(item.sender.user)
 		context['rel_receiver'] = rel_receiver
 		context['rel_sender'] = rel_sender
-		context['is_empty'] = False
-		if len(self.get_queryset()) == 0:
-			context['is_empty'] = True
+		# context['is_empty'] = False
+		
+		context['is_empty'] = True
 
 		return context
 
